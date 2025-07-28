@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reginald's Connect 4</title>
+        <link rel="stylesheet" href="CSS file.css">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+        <script src="Connect4.js"></script>
+    </head>
+    <body>
+        <h1>Reginald's Connect 4</h1>
+        <label for="player1-color">Player 1 Color:</label>
+        <input type="color" id="player1-color" name="player1-color" value="#ff0000">
+        <br>
+        <label for="player2-color">Player 2 Color:</label>
+        <input type="color" id="player2-color" name="player2-color" value="#ffff00"> 
+        <br>
+        <button onclick="setPlayersColors()">Start Game</button>
+        <h2 id="winner"></h2>
+        <div id="board"></div>
+        <h3 id="timer"></h3> <!-- Timer display -->
+        <button id="play-again" onclick="playAgain()" style="display: none;">Play Again</button>
+    </body>
+</html>
